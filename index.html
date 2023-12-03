@@ -3,45 +3,125 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rewatch</title>
+    <title>Al Barkah</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
     <div class="navbar">
         <div class="navbar-logo">
-            <h1>ReWatch</h1>
+            <h1>🕌  Al Barkah</h1>
         </div>
         <div class="navbar-item">
             <ul>
                 <li>Home</li>
-                <li>Specifications</li>
-                <li>Pricing</li>
+                <li>Prayer</li>
+                <li>News</li>
                 <li>About</li>
             </ul>
+            <a class="btn-nav" href="https://www.youtube.com/">Quran</a>
         </div>
     </div>
-    <div class="container">
+    <div class="main-container">
         <div class="brand-detail">
             <div class="brand-content">
-                <div class="brand-text">
-                    <div class="spinwords">
-                        <span>Sell</span>
-                        <span>Buy</span>
-                        <span>Value</span>
-                        <span>Sell</span>
-                    </div>
-                    <h1>Your Watch on</h1>
+                <div class="location">
+                    <p>🕌  Cileungsi, Kec. Cileungsi, Kabupaten Bogor, Jawa Barat 16820</p>
                 </div>
-                <h1>ReWatch</h1>
-                <!-- <button onclick="location.href = 'test.html';">Buy Or Sell</button>
-                <button onclick="location.href = 'test.html';">See More</button> -->
-                <input type="search" class="search" placeholder=" &#xf002; Wow ini adealah ngewe">
+                <h1>Selamat datang di website Masjid <br><span>Al Barkah</span</h1><br>
+                <div class="subtext">
+                    <p>Sudahkah anda tahu jadwal shalat hari ini?</p>
+                </div>
+                <a href="#" class="btn-container">Cek Jadwal Shalat Sekarang</a>
             </div>
         </div>
-        <div class="brand-photo"></div>
+        <div class="brand-photo">
+            <!-- <img src="https://static.vecteezy.com/system/resources/previews/025/219/743/original/islamic-mosque-illustration-png.png" alt=""> -->
+        </div>
     </div>
-    <div class="mission-container"></div>
+    <div class="mission-container mt-5">
+        <section class="jadwal-sholat mt-4">
+            <div class="container mt-4">
+                <div class="card">
+                    <div class="card-header text-bg-success">
+                        <div class="row text-white">
+                            <h1 class="card-title text-white d-flex justify-content-center mt-4">Jadwal Sholat</h1>
+                            <p class="fw-bold text-wh">Kota/Lokasi : <span class="fw-normal" id="city">test</span></p>
+                            <p class="fw-bold text-wh">Provinsi/Daerah : <span class="fw-normal" id="prov">test</span></p>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table class="table table-hover table-striped">
+                                <thead class="table-primary">
+                                    <th>Tanggal</th>
+                                    <th>Imsak</th>
+                                    <th>Subuh</th>
+                                    <th>Terbit</th>
+                                    <th>Dzuhur</th>
+                                    <th>Ashar</th>
+                                    <th>Maghrib</th>
+                                    <th>Isya</th>
+                                </thead>
+                                <tbody id="list-jadwal">
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="news">
+        <h1 class="text-title">Muslim News</h1>
+        <div class="news-content">
+            <div class="news-card">
+                <img src="https://thumb.viva.co.id/media/frontend/thumbs3/2020/06/08/5eddfe051e606-viva-militer-israel-vs-palestina-ilustrasi_1265_711.jpg" alt="Bendera Israel dan Palestina">
+                <h2>Mengapa Israel Sangat Membenci Palestina?</h2>
+                <p>Rakyat Palestina memiliki segala alasan untuk membenci Israel, negara penjajah pemukiman yang dibangun di atas reruntuhan Tanah Air mereka. Tetapi mengapa Israel begitu membenci Palestina?</p>
+                <a  class="btn-news" href="https://www.viva.co.id/berita/dunia/1662065-mengapa-israel-sangat-membenci-palestina">Pelajari Selengkapnya</a>
+            </div>
+            <div class="news-card">
+                <img src="https://akcdn.detik.net.id/visual/2023/11/14/presiden-joe-biden-bertemu-dengan-presiden-indonesia-joko-widodo-di-ruang-oval-gedung-putih-senin-13-november-2023-di-washingt-5_169.jpeg?w=715&q=90" alt="Presiden Amerika">
+                <h2>Joe Biden Minta Maaf ke Warga Muslim AS & Palestina, Kenapa?</h2>
+                <p>Presiden Amerika Serikat Joe Biden meminta maaf kepada beberapa pemimpin terkemuka Muslim-Amerika karena secara terbuka mempertanyakan jumlah korban tewas warga Palestina yang dilaporkan oleh Kementerian Kesehatan Gaza yang dikuasai Hamas.</p>
+                <a  class="btn-news" href="https://www.viva.co.id/berita/dunia/1662065-mengapa-israel-sangat-membenci-palestina">Pelajari Selengkapnya</a>
+            </div>
+            <div class="news-card">
+                <img src="https://asset-2.tstatic.net/jabar/foto/bank/images/illustrasi-imam-tarawih-cianjur.jpg" alt="Sholat berjamaah">
+                <h2>Ini 5 Keutamaan Bulan Ramadan, yang Kelima sangat Didambakan Umat Muslim</h2>
+                <p>Berpuasa pada bulan Ramadan merupakan sebuah kewajiban bagi umat Islam. Namun selain hal tersebut terdapat pula hal-hal lain yang perlu diketahui kenapa bulan Ramadan menjadi bulan yang begitu istimewa bagi umat muslim.</p>
+                <a  class="btn-news" href="https://jabar.tribunnews.com/2017/06/01/ini-5-keutamaan-bulan-ramadan-yang-kelima-sangat-didambakan-umat-muslim">Pelajari Selengkapnya</a>
+            </div>
+            <div class="read-card">
+                <h1>Baca Lebih Banyak</h1>
+                <a href="https://hidayatullah.com/" style="color: white;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="currentColor" class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
+                        <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z"/>
+                      </svg>
+                </a>
+                
+            </div>
+            </div>
+        </div>
+    </div>
 
-    <script src="https://kit.fontawesome.com/97fc849bc5.js" crossorigin="anonymous"></script>
+
+    <script src="app.js"></script>
+
+    <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
+<footer>
+    <div class="footer-content">
+        <h1 class="text-title">Contact Us</h1>
+        <p>Instagram: @AlBarkahmosque</p>
+        <p>Twitter/X: @AlBarkahmosque</p>
+        <p>WhatsApp: 083576974243</p>
+        <p>Alamat : Masjid Al Barkah, Cileungsi, Kec. Cileungsi, <br>Kabupaten Bogor, Jawa Barat 16820</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.9885337110773!2d106.95668977472533!3d-6.395478593595092!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69948a9e259ffd%3A0xdb059725ea74445a!2sMasjid%20Al%20Barkah%2C%20Cileungsi%2C%20Kec.%20Cileungsi%2C%20Kabupaten%20Bogor%2C%20Jawa%20Barat%2016820!5e0!3m2!1sen!2sid!4v1701587988230!5m2!1sen!2sid" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <p class="trademark">Dean Denaki 2023 All Rights Reserved</p>
+    </div>
+    <div class="footer-image"></div>
+</footer>
 </html>
